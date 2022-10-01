@@ -33,6 +33,7 @@ mark{
 .title button a {
     text-decoration: none;
     color: #3f51b5;
+    padding: 5px 10px;
 }
 
 .start {
@@ -52,7 +53,6 @@ mark{
     width: 80%;
     display: flex;
     justify-content: space-between;
-
     align-items: center;
     /* align-items: baseline; */
     border: #3f51b5 1px solid;

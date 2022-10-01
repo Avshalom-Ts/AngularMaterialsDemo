@@ -1,0 +1,98 @@
+<div class="box">
+    <div class="title">
+        <h1>Angular Materials Badges EX.</h1>
+        <button mat-raised-button><a href="https://material.angular.io/components/badge/overview"
+                target="_blank">Angular Badges Exemples</a></button>
+    </div>
+    <div class="start">
+        <h2>Start by import the Module in the Module Area</h2>
+        <code> MatBadgeModule from '@angular/material/badge';</code>
+    </div>
+    <div class="BadgesTypes">
+        <div>
+            <h2>Badges Basic :</h2>
+            <p>Add<mark>matBadge="5"</mark> To some html element</p>
+        </div>
+        <div>
+            <apan matBadge="5">Notification</apan>
+            <p>The most basic badges</p>
+        </div>
+        <div>
+            <span matBadge="5" matBadgePosition="below before">Notification</span>
+            <p>Add The <mark>matBadgePosition="below before"</mark> Atribute</p>
+        </div>
+        <div>
+            <span matBadge="5" matBadgePosition="below after">Notification</span>
+            <p>Add The <mark>matBadgePosition="below after"</mark> Atribute</p>
+        </div>
+        <div>
+            <span matBadge="5" matBadgePosition="above before">Notification</span>
+            <p>Add The <mark>matBadgePosition="above before"</mark> Atribute</p>
+        </div>
+    </div>
+    <div class="BadgesTypes">
+        <div>
+            <h2>Badges Sizes :</h2>
+        </div>
+        <div>
+            <span matBadge="5" matBadgeSize="small">Notification</span>
+            <p>Add<mark>matBadgeSize="small"</mark> To some html element</p>
+        </div>
+        <div>
+            <span matBadge="5" matBadgeSize="medium">Notification</span>
+            <p>Add <mark>matBadgeSize="medium"</mark> Atribute</p>
+        </div>
+        <div>
+            <span matBadge="5" matBadgeSize="large">Notification</span>
+            <p>Add <mark>matBadgeSize="large"</mark> Atribute</p>
+        </div>
+    </div>
+    <div class="BadgesTypes">
+        <div>
+            <h2>Badges Colors :</h2>
+        </div>
+        <div>
+            <span matBadge="5" matBadgeColor="primary">Notification</span>
+            <p>Add<mark>matBadgeColor="primary"</mark> To some html element</p>
+        </div>
+        <div>
+            <span matBadge="5" matBadgeColor="accent">Notification</span>
+            <p>Add <mark>matBadgeColor="accent"</mark> Atribute</p>
+        </div>
+        <div>
+            <span matBadge="5" matBadgeColor="warn">Notification</span>
+            <p>Add <mark>matBadgeColor="warn"</mark> Atribute</p>
+        </div>
+    </div>
+    <div class="BadgesTypes">
+        <div>
+            <h2>Badges Overlap :</h2>
+        </div>
+        <div>
+            <span matBadge="5" matBadgeOverlap="false">Notification</span>
+            <p>Add <mark>matBadgeOverlap="false"</mark> To avoid overlaps</p>
+        </div>
+    </div>
+    <div class="BadgesTypes">
+        <div>
+            <h2>Badges Property binding :</h2>
+        </div>
+        <div>
+            <span [matBadge]="notification" matBadgeOverlap="false">Notification</span>
+            <p>Add in <mark>component.ts</mark>notification = 2</p>
+            <p>Replace <mark>[matBadge]="notification"</mark> With property bindings</p>
+        </div>
+    </div>
+    <div class="BadgesTypes">
+        <div>
+            <h2>Badges Property binding > 0 then show the badge :</h2>
+        </div>
+        <div>
+            <span [matBadge]="notification" matBadgeOverlap="false"
+                [matBadgeHidden]=" notification===0 ">Notification</span>
+            <p>Add <mark>[matBadgeHidden]=" notification===0 "</mark> in html element </p>
+            <p>For that badge will show only if the number greater then 0</p>
+            <p>The number now is {{notification}}</p>
+        </div>
+    </div>
+</div>

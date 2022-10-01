@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+mark {
+    background-color: #3f51b5;
+    padding: 2px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 50px;
+    background-color: #3f51b5;
+}
+
+.title h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.title button a {
+    text-decoration: none;
+    color: #3f51b5;
+    padding: 5px 10px;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.start h2 {
+    color: rgb(187, 0, 0);
+}
+
+.IconTypes {
+    margin: 15px;
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: baseline; */
+    border: #3f51b5 1px solid;
+}
+
+button {
+    margin: 30px 15px;
+}

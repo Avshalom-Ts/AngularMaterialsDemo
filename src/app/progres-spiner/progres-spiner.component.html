@@ -1,0 +1,40 @@
+<div class="box">
+    <div class="title">
+        <h1>Angular Materials Progress pinner EX.</h1>
+        <button mat-raised-button><a href="https://material.angular.io/components/progress-spinner/overview"
+                target="_blank">Angular Progress pinner Exemples</a></button>
+    </div>
+    <div class="start">
+        <h2>Start by import the Module in the Module Area</h2>
+        <code> MatProgressSpinnerModule from '@angular/material/progress-spinner'</code>
+    </div>
+    <div class="BadgesTypes">
+        <div>
+            <h2>Progress pinner Type 1 :</h2>
+            <p>mat progress spinner whit the <mark>value="40"</mark> that present the circle progress</p>
+            <p> and mat apinner</p>
+        </div>
+        <div>
+            <mat-progress-spinner value="40"></mat-progress-spinner>
+        </div>
+    </div>
+    <div class="BadgesTypes">
+        <div>
+            <h2>Progress pinner Type 2 :</h2>
+            <p>mat spinner is spinner that not stop spining</p>
+        </div>
+        <div>
+            <mat-spinner></mat-spinner>
+        </div>
+    </div>
+    <div class="BadgesTypes">
+        <div>
+            <h2>Most cases uses when the app is loaded / busy :</h2>
+            <p>This Button function like the app is busy press on it to spin for five second</p>
+            <button mat-raised-button color="warn" (click)="onLoadData()">Press on me </button>
+        </div>
+        <div>
+            <mat-spinner *ngIf="showSpiner"></mat-spinner>
+        </div>
+    </div>
+</div>

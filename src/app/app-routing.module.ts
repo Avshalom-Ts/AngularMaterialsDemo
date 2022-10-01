@@ -1,11 +1,13 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {TypographyComponent} from 'src/app/typography/typography.component'
-import { AppComponent } from './app.component';
+import { TypographyComponent } from 'src/app/typography/typography.component';
+import { BadgesComponent } from './badges/badges.component';
 import { ButtonsToggleComponent } from './buttons-toggle/buttons-toggle.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { HomeComponent } from './home/home.component';
 import { IconsComponent } from './icons/icons.component';
+import { ProgresBarComponent } from './progres-bar/progres-bar.component';
+import { ProgresSpinerComponent } from './progres-spiner/progres-spiner.component';
 
 
 const routes: Routes = [
@@ -28,6 +30,18 @@ const routes: Routes = [
   {
     path: 'Icons',
     component: IconsComponent
+  },
+  {
+    path: 'Badges',
+    component: BadgesComponent
+  },
+  {
+    path: 'ProgressSpinner',
+    component: ProgresSpinerComponent
+  },
+  {
+    path: 'ProgressBar',
+    component: ProgresBarComponent
   }
 ];
 

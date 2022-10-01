@@ -1,21 +1,36 @@
-h1 {
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
 }
+
+mark {
+    background-color: #3f51b5;
+    padding: 2px;
+    margin: auto 2px;
+    color: white;
+}
+
 
 .box {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* background-color: aliceblue; */
 }
 
 .title {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: baseline;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 50px;
     background-color: #3f51b5;
+}
+
+.title h1 {
+    padding: 0;
+    margin: 0;
 }
 
 .title button a {
@@ -24,27 +39,32 @@ h1 {
     padding: 5px 10px;
 }
 
-.start{
+.start {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 15px auto;
 }
 
-.start h2{
+.start h2 {
     color: rgb(187, 0, 0);
 }
 
-.ButtonsTypes{
+.BadgesTypes {
     margin: 15px;
     padding: 20px;
     width: 80%;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     border: #3f51b5 1px solid;
 }
 
-button{
+.BadgesTypes p {
+    margin: 20px 0;
+}
+
+
+button {
     margin: 30px 15px;
 }

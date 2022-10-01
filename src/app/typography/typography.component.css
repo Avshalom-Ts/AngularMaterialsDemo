@@ -8,11 +8,20 @@ h1{
     align-items: center;
 }
 
-.title{
+.title {
     width: 100%;
-    text-align: center;
-    padding: 10px 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 50px;
     background-color: #3f51b5;
+}
+
+.title button a {
+    text-decoration: none;
+    color: #3f51b5;
+    padding: 5px 10px;
 }
 
 .mat-typography{
