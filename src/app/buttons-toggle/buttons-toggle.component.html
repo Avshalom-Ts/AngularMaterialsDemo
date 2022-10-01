@@ -1,0 +1,75 @@
+<div class="box">
+    <div class="title">
+        <h1>Angular Materials Buttons Toggle Module EX.</h1>
+        <button mat-raised-button><a href="https://material.angular.io/components/button-toggle/overview"
+                target="_blank">Angular Materials Buttons Toggle Exemples</a></button>
+    </div>
+    <div class="start">
+        <h2>Start by import the Module in the Module Area</h2>
+        <code> MatButtonToggleModule from '@angular/material/button-toggle'</code>
+    </div>
+    <div class="ButtonsTypes">
+        <div>
+            <h2>Buttons Toggle Types :
+            </h2>
+            <p>Take the Difault Color From Angular Material</p>
+            <p>The use the value in the toggle button :</p>
+            <p>Add <mark>#toggleBtn</mark> to the element and interpolate with double curly brakets</p>
+            <h3>{{toggleBtn1.checked}}</h3>
+        </div>
+        <div>
+            <mat-button-toggle #toggleBtn1>Toggle Button</mat-button-toggle>
+        </div>
+    </div>
+    <div class="ButtonsTypes">
+        <div>
+            <p>If we add <mark>"checked"</mark> to the button Element :</p>
+            <p>we will see that is : " {{toggleBtn2.checked}} " by difault</p>
+        </div>
+        <div>
+            <mat-button-toggle #toggleBtn2 checked>checked Button</mat-button-toggle>
+        </div>
+    </div>
+    <div class="ButtonsTypes">
+        <div>
+            <p>If we add <mark>"disable"</mark> to the button Element :</p>
+            <p>we will see that is : " {{toggleBtn3.checked}} " disable by difault</p>
+        </div>
+        <div>
+            <mat-button-toggle #toggleBtn3 disabled>disabled Button</mat-button-toggle>
+        </div>
+    </div>
+    <div class="ButtonsTypes">
+        <div>
+            <h2>Buttons Toggle group Types : </h2>
+            <p>We can Add <mark>value="toggle1"</mark> for exemple </p>
+            <p>To accese the value we will add <mark>#toggleGroup="matbuttontogglegroup"</mark></p>
+            <p>To accese get the value add in double curly bracket <mark>toggleGroup.value</mark></p>
+            <p>The value is {{toggleGroup.value}}</p>
+        </div>
+        <div>
+            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+                <mat-button-toggle value="toggle1">Toggle 1</mat-button-toggle>
+                <mat-button-toggle value="toggle2">Toggle 2</mat-button-toggle>
+                <mat-button-toggle value="toggle3">Toggle 3</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+    <div class="ButtonsTypes">
+        <div>
+            <h2>Buttons Toggle group Types : </h2>
+            <p>We can Add <mark>value="toggle1"</mark> for exemple </p>
+            <p>To accese the value we will add <mark>#toggleGroup="matbuttontogglegroup"</mark></p>
+            <p>To accese get the value add in double curly bracket<mark>toggleGroup.value</mark></p>
+            <p>If you want to select multiple button add <mark>multiple</mark> to the directive element group</p>
+            <p>The value now is {{toggleGroup2.value}} of type array seperated by coma</p>
+        </div>
+        <div>
+            <mat-button-toggle-group #toggleGroup2="matButtonToggleGroup" multiple>
+                <mat-button-toggle value="multToggle1">Toggle 1</mat-button-toggle>
+                <mat-button-toggle value="multToggle2">Toggle 2</mat-button-toggle>
+                <mat-button-toggle value="multToggle3">Toggle 3</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+</div>

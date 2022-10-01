@@ -1,0 +1,80 @@
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #3f51b5;
+}
+
+.title h1{
+    padding: 0;
+    margin: 0;
+}
+
+.usefulLinx{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+.links button{
+    margin: 0 15px;
+}
+
+.links button a {
+    text-decoration: none;
+    color: #3f51b5;
+}
+
+.codeBox{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.codeBox h2{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 5px;
+}
+
+.newInstroction{
+    width: 70%;
+    display: flex;
+
+}
+
+.newInstroction ol{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.newInstroction ol li{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 5px 0;
+    
+}
+
+.newInstroction ol li code{
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px 10px;
+    color: #3f51b5;
+}
